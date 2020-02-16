@@ -25,3 +25,21 @@ This theme uses a logo located in the path indicated by the `logo` parameter. To
 [params]
   logo = "/images/logo.png"
 ```
+
+### Navigations items
+To add navigation menu, you can use Hugo's menu features, including a second level, using the following in your `config.toml`:
+```TOML
+[menu]
+  [[menu.main]]
+    identifier = "pybcn-association"
+    name = "PyBCN Association"
+    url = "/association/"
+    weight = 1000
+
+  [[menu.main]]
+    parent = "pybcn-association"
+    identifier = "information"
+    name = "Information"
+    url = "/association/information/"
+    weight = 1100
+```
