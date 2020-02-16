@@ -43,3 +43,6 @@ To add navigation menu, you can use Hugo's menu features, including a second lev
     url = "/association/information/"
     weight = 1100
 ```
+
+### Debug mode
+By running Hugo using the `DEBUG` environment variable set to anything, it will show some debugging information in the footer.
